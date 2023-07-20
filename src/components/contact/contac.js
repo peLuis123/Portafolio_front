@@ -59,6 +59,11 @@ function Contact(){
         // Llama a la función guardarContanto con los valores
         guardarContanto(nombre, correo, telefono, mensaje);
         enviarCorreo(nombre, correo, mensaje);
+        document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("message").value = "";
+    setData(null); // Limpia los datos del estado
       };
     return(
         <div class="formulario_globo">
