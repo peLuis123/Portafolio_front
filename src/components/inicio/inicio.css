@@ -22,13 +22,11 @@
 }
 
 .carousel-overlay h1 {
-  padding-bottom: 30px;
   font-size: 40px;
   margin-left: 100px;
 }
 
 .carousel-overlay p {
-  padding-bottom:53px ;
   font-size: 21px;
   margin-left: 100px;
 }
@@ -54,9 +52,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px; /* Añadimos un margen arriba para separar los puntos del párrafo */
+  position:absolute;
+  top: 300%;
 }
-
+.carousel-content{
+  position: absolute;
+  top: 2%;
+}
 .carousel-dot {
   width: 10px;
   height: 10px;
@@ -67,7 +69,7 @@
 }
 
 .carousel-dot.active {
-  background-color: #ff0000;
+  background-color: #E0752F;
 }
 
 /* Media queries para hacer el carrusel responsivo */

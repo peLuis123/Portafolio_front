@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./inicio.css";
 import bicicletaImage1 from "../images/bicicleta.png";
-import bicicletaImage2 from "../images/bicicleta1.png";
-import bicicletaImage3 from "../images/bicicleta.png";
+import bicicletaImage2 from "../images/casa-lago.png";
+import bicicletaImage3 from "../images/contact.png";
+import Header from '../header/header';
 
 const Inicio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +22,8 @@ const Inicio = () => {
   }, []);
 
   return (
-    <div className="carousel">
+    <div className="carousel" id="home">
+      <Header></Header>
       <div className="carousel-overlay" style={{ padding: "0px" }}>
         <div className="carousel-content">
           <h1 className="carousel-title">Sed ut perspiciatis unde omnis iste natus</h1>

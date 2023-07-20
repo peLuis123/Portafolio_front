@@ -1,38 +1,41 @@
-import React, { useState } from 'react';
-import './header.css';
-import logo from '../images/top-logo.png'; // Importa la imagen del logo
+import React from "react";
+import "./header.css";
+import logo from "../images/top-logo.png";
 
-const Header = ({ activeSection, setActiveSection }) => {
-  const handleSectionClick = (section) => {
-    setActiveSection(section);
-  };
 
-  return (
-    <div className="app-container">
-    <header className={`header ${activeSection !== 'home' ? 'header-transparent' : ''}`}>
-      <nav className="nav">
-        <img src={logo} alt="Logo" className="logo" /> {/* Muestra el logo */}
-        <ul className="nav-list">
-          <li className={`nav-item ${activeSection === 'Inicio' ? 'active' : ''}`}>
-            <button onClick={() => handleSectionClick('home')}>Home</button>
-          </li>
-          <li className={`nav-item ${activeSection === 'about' ? 'active' : ''}`}>
-            <button onClick={() => handleSectionClick('about')}>About</button>
-          </li>
-          <li className={`nav-item ${activeSection === 'products' ? 'active' : ''}`}>
-            <button onClick={() => handleSectionClick('products')}>Products</button>
-          </li>
-          <li className={`nav-item ${activeSection === 'services' ? 'active' : ''}`}>
-            <button onClick={() => handleSectionClick('services')}>Services</button>
-          </li>
-          <li className={`nav-item ${activeSection === 'contact' ? 'active' : ''}`}>
-            <button onClick={() => handleSectionClick('contact')}>Contact</button>
-          </li>
-        </ul>
-      </nav>
+function Header(){
+    return(
+    <div class="contenedor-menu">
+    <header>
+        <nav class="nav_menu" >
+            <div class="container-fluid top_logo">
+                <img src={logo}  alt="Logo top 25 Watts " class="imgLogo"></img>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar_link" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    </div>
-  );
-};
-
+</div>);
+}
 export default Header;

@@ -8,7 +8,6 @@ const App = () => {
 
   return (
     <div className="app">
-      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
       <Main activeSection={activeSection} />
     </div>
   );

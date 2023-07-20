@@ -1,12 +1,12 @@
-.app {
+/* .app {
     font-family: Arial, sans-serif;
   }
   .app-container {
     width: 100%;
 
     margin: 0 auto; /* Centra el contenido horizontalmente */
-    padding: 0; /* Asegúrate de que no haya padding */
-  }
+    /* padding: 0; Asegúrate de que no haya padding
+  } *//*
   .header {
     position: fixed;
     top: 0;
@@ -58,10 +58,108 @@
     font-weight: bold;
   }
 
-  /* Estilos para el logo */
   .logo {
     width: 100px;
     height: auto;
     margin-right: 20px;
-    flex-shrink: 0; /* Evita que el logo se reduzca */
-  }
+    flex-shrink: 0;
+  } */
+  .contenedor-menu {
+    border-bottom: 1px solid #E0752F;
+    padding-left: 0%;
+    background-position-y: center;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+
+}
+.nav_menu {
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-right: 12%;
+  --bs-bg-opacity: 1;
+  background-color: transparent !important;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+}
+.container-logo {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 7px solid transparent;
+  border-radius: 25%;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+span {
+  color: #E0752F;
+}
+.navbar_link {
+  padding-right: 15%;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  display: none;
+  display: flex !important;
+  flex-basis: auto;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-direction: row;
+  right: 8%;
+    position: absolute;
+}
+.nav-item {
+  padding-right: 8%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: medium;
+  opacity: 1;
+  text-align: left;
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  padding-right: 0;
+  padding-left: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.imgLogo {
+  opacity: 1;
+  position: absolute;
+    left: 4%;
+    z-index: 1;
+}
