@@ -1,4 +1,4 @@
-/* Estilos generales para el componente Contacto */
+
 .formulario_globo__form .formulario_globo__content .formulario_globo__content__h4 {
   width: 55%;
 }
@@ -103,4 +103,4 @@ span {
   position: absolute;
   right: 4%;
   z-index: 1;
-}/*# sourceMappingURL=contac.css.map */
+}

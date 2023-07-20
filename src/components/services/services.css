@@ -1,58 +1,54 @@
 @charset "UTF-8";
-/* Estilos generales para el componente Services */
 .section4 {
-  height: 968px; /* Altura de 768 píxeles */
-  color: #000; /* Color de texto negro */
-  padding: 0; /* Espaciado interior superior e inferior */
-  display: flex; /* Convertimos el contenedor en un flex container */
-  background-color: #fff; /* Color blanco para el contenedor principal */
-  position: relative; /* Agregamos posición relativa para que los elementos hijos se posicionen relativos a este contenedor */
+  height: 968px;
+  color: #000;
+  padding: 0;
+  display: flex;
+  background-color: #fff;
+  position: relative;
 }
 
-/* Estilos para la mitad izquierda */
 .section4__white {
-  flex: 2; /* Ocupa el 40% del ancho disponible */
-  height: 100%; /* Altura igual al 100% */
-  background-color: #fff; /* Color blanco para la mitad izquierda */
+  flex: 2;
+  height: 100%;
+  background-color: #fff;
 }
 
-/* Estilos para la mitad derecha con la imagen */
 .section4__image-container {
-  flex: 3; /* Ocupa el 60% del ancho disponible */
-  height: 100%; /* Altura igual al 100% */
-  display: flex; /* Convertimos este contenedor en un flex container */
-  justify-content: flex-end; /* Alineamos la imagen a la derecha */
-  align-items: center; /* Centramos verticalmente la imagen */
+  flex: 3;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-/* Estilos para la imagen de servicio */
 .section4__image {
-  width: 100%; /* Ancho al 100% para adaptarse al contenedor */
-  max-height: 100%; /* Ajusta la altura máxima de la imagen */
+  width: 100%;
+  max-height: 100%;
 }
 
 .accordion-title {
-  font-size: 21px; /* Tamaño de letra para la pregunta */
-  font-weight: bold; /* Texto en negrita */
+  font-size: 21px;
+  font-weight: bold;
   margin: 0;
 }
 
 .accordion-content {
   display: none;
   padding: 10px;
-  font-size: 28px; /* Tamaño de letra para la respuesta */
+  font-size: 28px;
 }
 
 .accordion-container {
   position: absolute;
   top: 50%;
-  right: 70%; /* Alineamos el acordeón a la derecha */
-  transform: translate(50%, -50%); /* Centramos verticalmente el acordeón */
-  width: 50%; /* Tamaño del acordeón */
+  right: 70%;
+  transform: translate(50%, -50%);
+  width: 50%;
 }
 
 .accordion-item {
-  position: relative; /* Aseguramos que la flecha esté posicionada correctamente */
+  position: relative;
   cursor: pointer;
   background-color: #f5f5f5;
   padding: 10px;
@@ -69,7 +65,6 @@
   padding: 10px;
 }
 
-/* Estilos para mostrar el contenido cuando el título se hace clic */
 .accordion-item.active .accordion-content {
   display: block;
 }
@@ -80,11 +75,10 @@
   position: absolute;
   right: 20px;
   top: 50%;
-  transform: translateY(-50%) rotate(0deg); /* Inicialmente la flecha apunta hacia abajo */
+  transform: translateY(-50%) rotate(0deg);
   cursor: pointer;
 }
 
-/* Rotación de la flecha al acordeón abierto */
 .accordion-item.active .accordion-arrow {
-  transform: translateY(-50%) rotate(180deg); /* Rotación para que la flecha apunte hacia arriba */
-}/*# sourceMappingURL=services.css.map */
+  transform: translateY(-50%) rotate(180deg);
+}

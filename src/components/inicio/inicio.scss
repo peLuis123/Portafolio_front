@@ -1,4 +1,4 @@
-/* Estilos generales del carrusel */
+
 .carousel {
   position: relative;
   width: 100%;
@@ -72,23 +72,22 @@
   background-color: #E0752F;
 }
 
-/* Media queries para hacer el carrusel responsivo */
 @media screen and (max-width: 768px) {
   .carousel-overlay {
-    top: 30%; /* Ajustamos el top para centrarlo más en pantallas pequeñas */
-    width: 100%; /* El ancho ahora es 100% para que sea responsive */
-    max-width: 300px; /* Limitamos el ancho máximo en pantallas pequeñas */
-    padding: 10px; /* Reducimos el padding para aprovechar el espacio */
+    top: 30%;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
   }
 
   .carousel-overlay h1 {
-    font-size: 24px; /* Tamaño de fuente del título para pantallas pequeñas */
-    margin-left: 0; /* Quitamos el margen izquierdo para centrarlo */
+    font-size: 24px;
+    margin-left: 0;
   }
 
   .carousel-overlay p {
-    font-size: 14px; /* Tamaño de fuente del párrafo para pantallas pequeñas */
-    margin-left: 0; /* Quitamos el margen izquierdo para centrarlo */
+    font-size: 14px;
+    margin-left: 0;
   }
 }
 .readmore-btn {
@@ -106,11 +105,10 @@
   margin-top: 10px;
 }
 .cuerpo {
-  /* ... (otros estilos del cuerpo) */
-  border-top: 1px solid #ccc; /* Agrega un borde superior de 1px de color gris claro */
+  border-top: 1px solid #ccc;
 }
 .carousel {
   position: relative;
-  width: 100%; /* Establece el ancho deseado */
+  width: 100%;
   height: 100vh;
 }
