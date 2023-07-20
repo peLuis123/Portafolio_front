@@ -4,7 +4,7 @@ import foto from "../images/contact.png";
 function Contact(){
     const [data, setData] = useState(null);
     const guardarContanto = (nombre,correo,telefono,mensaje) =>{
-        const url = "http://localhost:8000/contactos"
+        const url = "https://apicontact-production-9497.up.railway.app/contactos"
         fetch(url,{
             method: "POST",
             headers: {
@@ -28,7 +28,7 @@ function Contact(){
     }
     const enviarCorreo = (nombre,correo,mensaje) =>{
         console.log("Datos a enviar:", nombre,",", correo,",", mensaje);
-        const url = "http://localhost:8000/contact"
+        const url = "https://apicontact-production-9497.up.railway.app/contact"
         fetch(url,{
             method: "POST",
             headers: {

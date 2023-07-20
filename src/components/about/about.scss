@@ -1,0 +1,38 @@
+/* Estilos generales para el componente About */
+.section2 {
+    height: 700px; /* Altura de 700 píxeles */
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Color de texto negro */
+    padding: 0; /* Espaciado interior superior e inferior */
+  }
+
+  /* Estilo específico para el texto "We Help Businesses" */
+  .section2__titulo {
+    font-size: 40px; /* Tamaño de letra del título */
+  }
+
+  .section2__titulo span {
+    display: block; /* Hace que el texto se muestre en una línea separada */
+    color: #f26722; /* Color de texto anaranjado */
+  }
+
+  /* Estilo específico para el texto "Grow and Innovate" */
+  .section2__subtitulo {
+    font-size: 40px; /* Tamaño de letra del subtitulo */
+    color: #000; /* Color de texto negro */
+  }
+
+  .section2__texto {
+    font-size: 28px; /* Tamaño de letra del párrafo */
+    margin-top: 20px; /* Espaciado superior del párrafo */
+  }
+
+  /* Estilos para el contenedor de texto */
+  .section2__container__texto {
+    margin: 167px 300px; /* Margen top, left, right, bottom */
+  }
+
+  .section2__container{
+    border-left: 32px solid #fb7d00;
+  }
+  /* Resto de estilos... */

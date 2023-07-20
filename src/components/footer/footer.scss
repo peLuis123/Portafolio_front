@@ -1,0 +1,35 @@
+/* Footer.css */
+.footer {
+    background-color: #222; /* Color casi negro */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinear el contenido al centro horizontalmente */
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Aseguramos que el contenido no se desborde del footer */
+    margin: 0 auto; /* Centramos el contenido horizontalmente dentro del footer */
+    padding: 0 20px;
+  }
+
+  .footer-text {
+    color: #fff; /* Texto en color blanco */
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 1;
+    text-align: left;
+    letter-spacing: 0.22px;
+    
+  }
+
+  .footer-logo {
+    width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+  }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Estilos generales del carrusel */
 .carousel {
   position: relative;
@@ -45,8 +44,7 @@
 .carousel-image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .carousel-dots {
@@ -54,15 +52,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position:absolute;
   top: 300%;
 }
-
-.carousel-content {
+.carousel-content{
   position: absolute;
   top: 2%;
 }
-
 .carousel-dot {
   width: 10px;
   height: 10px;
@@ -84,17 +80,19 @@
     max-width: 300px; /* Limitamos el ancho máximo en pantallas pequeñas */
     padding: 10px; /* Reducimos el padding para aprovechar el espacio */
   }
+
   .carousel-overlay h1 {
     font-size: 24px; /* Tamaño de fuente del título para pantallas pequeñas */
     margin-left: 0; /* Quitamos el margen izquierdo para centrarlo */
   }
+
   .carousel-overlay p {
     font-size: 14px; /* Tamaño de fuente del párrafo para pantallas pequeñas */
     margin-left: 0; /* Quitamos el margen izquierdo para centrarlo */
   }
 }
 .readmore-btn {
-  margin-bottom: 69px;
+   margin-bottom: 69px;
   margin-left: 17%;
   background-color: #ff8800;
   color: #fff;
@@ -107,14 +105,12 @@
   cursor: pointer;
   margin-top: 10px;
 }
-
 .cuerpo {
   /* ... (otros estilos del cuerpo) */
   border-top: 1px solid #ccc; /* Agrega un borde superior de 1px de color gris claro */
 }
-
 .carousel {
   position: relative;
   width: 100%; /* Establece el ancho deseado */
   height: 100vh;
-}/*# sourceMappingURL=inicio.css.map */
+}
