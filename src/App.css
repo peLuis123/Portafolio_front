@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* Estilos globales del contenedor principal */
+.contenedor-principal {
+  max-width: 1366px; /* Establece el ancho máximo de 1366px */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}

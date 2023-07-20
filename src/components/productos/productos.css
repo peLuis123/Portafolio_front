@@ -1,0 +1,112 @@
+/* Estilos generales para el componente Product */
+.section3 {
+    height: 768px; /* Altura de 768 píxeles */
+    color: #000; /* Color de texto negro */
+    padding:  0; /* Espaciado interior superior e inferior */
+    position: relative; /* Agregamos posición relativa para el contenedor principal */
+  }
+
+  /* Estilos para el fondo dividido */
+  .section3__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Estilos para la mitad derecha en gris */
+  .section3__gray {
+    position: absolute;
+    top: 0;
+    left: 73%; /* 100% - 27% = 73% */
+    width: 27%; /* 27% del ancho total */
+    height: 100%; /* Altura igual al 100% */
+    background-color: #ccc; /* Color gris para la mitad derecha */
+  }
+
+  /* Estilos para la mitad izquierda en blanco */
+  .section3__white {
+    left: 0;
+    width: 73%; /* 73% de ancho para la mitad izquierda */
+    background-color: #fff; /* Color blanco para la mitad izquierda */
+  }
+
+  /* Estilos para el contenedor de la imagen */
+  .section3__image-container {
+    position: absolute;
+    top: 50%; /* Centramos verticalmente */
+    left: 50%; /* Centramos horizontalmente */
+    transform: translate(-50%, -50%); /* Centramos exactamente el contenedor */
+    width: 956px; /* Ancho fijo de la imagen */
+    height: 552px; /* Altura fija de la imagen */
+    border: 1px solid #000; /* Borde para visualizar mejor la imagen */
+  }
+
+  /* Estilos para la imagen de productos */
+  .section3__image {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    max-height: 100%; /* Ajusta la altura máxima de la imagen */
+    z-index: 1; /* Asegura que la imagen esté sobre el fondo */
+    position: relative; /* Agregamos posición relativa para poder posicionar el cuadrado */
+  }
+
+  /* Estilos para el cuadrado anaranjado */
+  .section3__orange-square {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 471px; /* 25% de la imagen (1/4) */
+    height: 304px; /* 25% de la imagen (1/4) */
+    background-color: #f26722; /* Color anaranjado */
+    z-index: 2; /* Colocar el cuadrado sobre la imagen */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 10px; /* Margen superior e izquierdo */
+    color: #fff;
+  }
+
+  /* Estilos para el primer div */
+  .section3__orange-square div:nth-child(1) {
+    font-size: 21px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para el segundo div */
+  .section3__orange-square div:nth-child(2) {
+    font-size: 59px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para el tercer div */
+  .section3__orange-square div:nth-child(3) {
+    font-size: 21px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+
+  .section3__arrow-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+  }
+
+  .section3__arrow-button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .section3__arrow-icon {
+    width: 100%;
+    height: 100%;
+    fill: #fff; /* Color blanco para las flechas */
+  }

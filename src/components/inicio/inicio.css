@@ -1,0 +1,114 @@
+/* Estilos generales del carrusel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  transform: translate(-50%, -30%);
+  width: 554px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.carousel-overlay h1 {
+  padding-bottom: 30px;
+  font-size: 40px;
+  margin-left: 100px;
+}
+
+.carousel-overlay p {
+  padding-bottom:53px ;
+  font-size: 21px;
+  margin-left: 100px;
+}
+
+.carousel-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-description {
+  font-size: 16px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-dots {
+  margin-left: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Añadimos un margen arriba para separar los puntos del párrafo */
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: #ff0000;
+}
+
+/* Media queries para hacer el carrusel responsivo */
+@media screen and (max-width: 768px) {
+  .carousel-overlay {
+    top: 30%; /* Ajustamos el top para centrarlo más en pantallas pequeñas */
+    width: 100%; /* El ancho ahora es 100% para que sea responsive */
+    max-width: 300px; /* Limitamos el ancho máximo en pantallas pequeñas */
+    padding: 10px; /* Reducimos el padding para aprovechar el espacio */
+  }
+
+  .carousel-overlay h1 {
+    font-size: 24px; /* Tamaño de fuente del título para pantallas pequeñas */
+    margin-left: 0; /* Quitamos el margen izquierdo para centrarlo */
+  }
+
+  .carousel-overlay p {
+    font-size: 14px; /* Tamaño de fuente del párrafo para pantallas pequeñas */
+    margin-left: 0; /* Quitamos el margen izquierdo para centrarlo */
+  }
+}
+.readmore-btn {
+   margin-bottom: 69px;
+  margin-left: 17%;
+  background-color: #ff8800;
+  color: #fff;
+  border: none;
+  width: 144px;
+  height: 45px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.cuerpo {
+  /* ... (otros estilos del cuerpo) */
+  border-top: 1px solid #ccc; /* Agrega un borde superior de 1px de color gris claro */
+}
+.carousel {
+  position: relative;
+  width: 100%; /* Establece el ancho deseado */
+  height: 100vh;
+}

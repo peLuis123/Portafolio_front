@@ -1,21 +1,31 @@
 import React from 'react';
-import Inicio from './inicio.js'
-
+import Inicio from './inicio/inicio.js'
+import About from './about/about'
+import Productos from './productos/productos';
+import Services from './services/services.js';
+import Contacto from './contact/contac.js';
+import Footer from './footer/footer.js';
 const Main = ({ activeSection }) => {
 
     return (
         <main className="main" style={{ padding: '0px' }}>
-            <section id="yo" className={`section ${activeSection === 'yo' ? 'active' : ''}`}>
-
+            <section id="Inicio" className={`section ${activeSection === 'Inicio' ? 'active' : ''}`}>
             <Inicio/>
             </section>
-            <section id="proyectos" className={`section ${activeSection === 'proyectos' ? 'active' : ''}`}>
-                <h2>Proyectos</h2>
-                {/* Contenido de la sección "Proyectos" */}
+            <section id="about" className={`section ${activeSection === 'about' ? 'active' : ''}`}>
+            <About/>
             </section>
-            <section id="contacto" className={`section ${activeSection === 'contacto' ? 'active' : ''}`}>
-                <h2>Contacto</h2>
-                {/* Contenido de la sección "Contacto" */}
+            <section id="Productos" className={`section ${activeSection === 'Productos' ? 'active' : ''}`}>
+                <Productos/>
+            </section>
+            <section id="Services" className={`section ${activeSection === 'Services' ? 'active' : ''}`}>
+                <Services/>
+            </section>
+            <section id="Contacto" className={`section ${activeSection === 'Contacto' ? 'active' : ''}`}>
+                <Contacto/>
+            </section>
+            <section>
+                <Footer/>
             </section>
         </main>
     );
